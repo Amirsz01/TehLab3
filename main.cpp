@@ -1,8 +1,8 @@
 #include <iostream>
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/Worker.h>
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/WorkerHour.h>
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/WorkerState.h>
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/WorkerPercent.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/Worker.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/WorkerHour.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/WorkerState.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/WorkerPercent.h>
 
 int main()
 {
@@ -14,11 +14,11 @@ int main()
 	while (true)
 	{
 		system("cls");
-		cout << "Ïðîèçâåñòè ðàñ÷åò çàðïëàòû : " << endl
-			<< "1. Ðàáîòíèêà ñ ïî÷àñîâîé îïëàòîé" << endl
-			<< "2. Ðàáîòíèêà øòàòà" << endl
-			<< "3. Ðàáîòíèêà ñ ïðîöåíòíîé ñòàâêîé" << endl
-			<< "0. Âûõîä" << endl;
+		cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ Ñ€Ð°ÑÑ‡ÐµÑ‚ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ : " << endl
+			<< "1. Ð Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° Ñ Ð¿Ð¾Ñ‡Ð°ÑÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ð»Ð°Ñ‚Ð¾Ð¹" << endl
+			<< "2. Ð Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° ÑˆÑ‚Ð°Ñ‚Ð°" << endl
+			<< "3. Ð Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° Ñ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚Ð½Ð¾Ð¹ ÑÑ‚Ð°Ð²ÐºÐ¾Ð¹" << endl
+			<< "0. Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
 		cin >> callback;
 		switch (callback)
 		{
