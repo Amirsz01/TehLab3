@@ -1,24 +1,24 @@
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/WorkerPercent.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/WorkerPercent.h>
 
 WorkerPercent::WorkerPercent() 
 {
 	ifstream in("WorkerPecent.txt");
 	if (!in || is_empty(in))
 	{
-		cout << "Ôàéë Ïóñò" << endl;
+		cout << "Ð¤Ð°Ð¹Ð» ÐŸÑƒÑÑ‚" << endl;
 		system("pause");
 		system("cls");
-		cout << "Ââåäèòå Èìÿ" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð˜Ð¼Ñ" << endl;
 		cin >> this->name;
-		cout << "Ââåäèòå Ôàìèëèþ" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¤Ð°Ð¼Ð¸Ð»Ð¸ÑŽ" << endl;
 		cin >> this->fname;
-		cout << "Ââåäèòå Òåëåôîí" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½" << endl;
 		cin >> this->phone;
-		cout << "Ââåäèòå Àäðåñ" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐÐ´Ñ€ÐµÑ" << endl;
 		cin >> this->adress;
-		cout << "Ââåäèòå ïðîäàæè çà ìåñÿö" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ð¸ Ð·Ð° Ð¼ÐµÑÑÑ†" << endl;
 		cin >> mounthSells;
-		cout << "Ââåäèòå ïðîöåíò ñ ïðîäàæ" << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ñ Ð¿Ñ€Ð¾Ð´Ð°Ð¶" << endl;
 		cin >> percent;
 	}
 	else
