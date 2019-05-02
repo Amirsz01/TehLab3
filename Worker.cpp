@@ -1,4 +1,4 @@
-#include </Users/Amirsz/source/repos/ÒåñòîâûéÑòåíä/ÒåñòîâûéÑòåíä3/Worker.h>
+#include </Users/Amirsz/source/repos/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´/Ð¢ÐµÑÑ‚Ð¾Ð²Ñ‹Ð¹Ð¡Ñ‚ÐµÐ½Ð´3/Worker.h>
 
 Worker::Worker()
 {
