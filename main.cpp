@@ -7,9 +7,7 @@
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	WorkerHour *a = nullptr;
-	WorkerState *b = nullptr;
-	WorkerPercent *c = nullptr;
+	Worker* obj = nullptr;
 	int callback;
 	while (true)
 	{
@@ -23,24 +21,25 @@ int main()
 		switch (callback)
 		{
 		case 1:
-			if (!a)
-				a = new WorkerHour;
-			cout << a->cash() << endl;
+			if (!obj)
+				delete obj;
+			obj = new WorkerHour;
+			cout << obj->cash() << endl;
 			break;
 		case 2:
-			if (!b)
-				b = new WorkerState;
-			cout << b->cash() << endl;
+			if (!obj)
+				delete obj;
+			obj = new WorkerState;
+			cout << obj->cash() << endl;
 			break;
 		case 3:
-			if (!c)
-				c = new WorkerPercent;
-			cout << c->cash() << endl;
+			if (!obj)
+				delete obj;
+			obj = new WorkerPercent;
+			cout << obj->cash() << endl;
 			break;
 		case 0:
-			delete a;
-			delete b;
-			delete c;
+			delete obj;
 			return 0;
 		default:
 			break;
