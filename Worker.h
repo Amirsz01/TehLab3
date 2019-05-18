@@ -5,12 +5,14 @@
 using namespace std;
 class Worker
 {
-public:
 	string name;
 	string fname;
 	string phone;
 	string adress;
+public:
 	Worker();
+	string getData(int data);
+	void setData(int data, string sData);
 	virtual ~Worker();
 	virtual int cash();
 	bool is_empty(ifstream& pFile);
