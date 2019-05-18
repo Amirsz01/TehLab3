@@ -8,30 +8,55 @@ int WorkerState::cash()
 WorkerState::WorkerState()
 {
 	ifstream in("WorkerState.txt");
-	if (!in || is_empty(in))
+	string callback;
+	int flag;
+	cout << "Ввести вручную или загрузить из файла? 1/0" << endl;
+	cin >> flag;
+	if (!flag)
 	{
-		cout << "Файл Пуст" << endl;
-		system("pause");
+		if (!in || is_empty(in))
+		{
+			cout << "Файл Пуст" << endl;
+			system("pause");
+			flag = 1;
+		}
+	}
+	if (flag)
+	{
 		system("cls");
 		cout << "Введите Имя" << endl;
-		cin >> this->name;
+		cin >> callback;
+		setData(1, callback);
 		cout << "Введите Фамилию" << endl;
-		cin >> this->fname;
+		cin >> callback;
+		setData(2, callback);
 		cout << "Введите Телефон" << endl;
-		cin >> this->phone;
+		cin >> callback;
+		setData(3, callback);
 		cout << "Введите Адрес" << endl;
-		cin >> this->adress;
-		cout << "Введите месячную заплату" << endl;
+		cin >> callback;
+		setData(4, callback);
+		cout << "Введите месячную зарплату" << endl;
 		cin >> mounthCash;
 	}
 	else
 	{
-		in >> name >> fname >> phone >> adress >> mounthCash;
+		in >> callback;
+		setData(1, callback);
+		in >> callback;
+		setData(2, callback);
+		in >> callback;
+		setData(3, callback);
+		in >> callback;
+		setData(4, callback);
+		in >> mounthCash;
 	}
+	in.close();
 }
 
 WorkerState::~WorkerState()
 {
 	ofstream out("WorkerState.txt");
-	out << name << " " << fname << " " << phone << " " << adress << " " << mounthCash;
+	out << getData(1) << " " << getData(2) << " " << getData(3) << " " << getData(4) << " " << mounthCash;
+	out.close();
 }
