@@ -1,6 +1,6 @@
 #pragma once
 #include </Users/Amirsz/source/repos/ТестовыйСтенд/ТестовыйСтенд3/Worker.h>
-class WorkerPercent : private Worker
+class WorkerPercent : public Worker
 {
 	int mounthSells;
 	int percent;
